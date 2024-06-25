@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+.italic {font-style: italic;}
+.bold {font-weight: bold;}
+.center {text-align: center;}
+
+/* ------------------------ NAVIGATION ----------------------- */
+
+#navbar {
+    position: fixed;
+    min-width: 200px;
+    width: 300px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: block;
+    border-right: 2px solid gray;
+}
+
+@media print {
+    #navbar {
+        display:none;
+    }
+}
+
+nav header {
+    text-align: center;
+    padding: 20px 30px;
+}
+
+nav .container ul li a {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    padding: 15px 20px;
+    border-top: 2px solid black;
+    cursor: pointer;
+    color: #111;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: gray;
+        background-color: darkgray;
+    }
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav .container ul li.active {
+    color: #111;
+    border: brown;
+    background-color: aqua;
+    transition: 0.3s ease background-color;
+}
+
+/* ------------------------ MAIN ----------------------- */
+
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 10% 10% 10% 1%;
+    margin-bottom: 110px;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+section .main-section {
+    margin-left: 200px;
+}
+
+header {
+    font-weight: bold;
+    font-size: 1.4em;
+    letter-spacing: .1rem;
+}

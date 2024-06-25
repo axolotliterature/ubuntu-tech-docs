@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Installing Ubuntu Linux - A Technical Guide</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+<nav id="navbar" role="main-doc">
+  <div class="container" >
+    <header>Installing Ubuntu</header>
+    <ul>
+    <li><a href="#introduction_to_ubuntu" class="nav-link">Introduction to Ubuntu</a></li>
+    <li><a href="#computer_requirements_for_ubuntu" class="nav-link">Computer Requirements For Ubuntu</a></li>
+    <li><a href="#you_will_need" class="nav-link">You Will Need</a></li>
+    <li><a href="#download_and_setup_ubuntu_live_boot_usb" class="nav-link">Download and Setup Ubuntu Live Boot USB</a></li>
+    <li><a href="#rufus_setup" class="nav-link">Rufus Setup</a></li>
+    <li><a href="#installing_ubuntu_linux" class="nav-link">Installing Ubuntu Linux</a></li>
+    <li><a href="#first_time_setup" class="nav-link">First Time Setup</a></li>
+    </ul>
+  </div>
+  
+</nav>
+
+<main id="main-doc">
+
+  <section class="main-section" id="introduction_to_ubuntu">
+    <header>Introduction to Ubuntu</header>
+    <article>
+    <h2>What is Ubuntu Linux and why should you use it?</h2>
+    <p>Ubuntu Linux is a free to use operating system that competes with other for-profit OSs such as Apple's Mac-OS and Microsoft's Windows platforms. Linux exists as a host of various distributions or flavors that are all open source, meaning that anyone can get a copy of the source code and contribute to updates or to software compatibility.</p>
+    <p>There are many distributions in various forms, and many are highly specialized for specific tasks such as computer development, hacking, or general-use daily drivers. Ubuntu is a general-use distribution that strives for the same level of accessibility and ease of use as other mainstream platforms such as MacOS. It is one of the most popular and widely used Linux distributions, so naturally there is a large number of developers contributing to tasks and applications from writing hardware drivers all the way to word processors and web browsers.</p>
+    <p>Because of this, Ubuntu is highly regarded as the most beginner friendly Linux distributions. Ubuntu also has a professional development team that stands behind the source code of the core framework of the operating system. This means that Ubuntu Linux is also one of the most stable distributions. With applications widely available and a graphical interface that is intuitive and thoughtful, Ubuntu is one of the best free options for a replacement operating system.</p>
+    </article>
+  </section>
+
+  <section class="main-section" id="computer_requirements_for_ubuntu">
+    <header>Computer Requirements for Ubuntu</header>
+    <article>
+    <ul>
+      <li>2GHz Dual Core Processor or Better</li>
+      <li>At Least 4GB RAM</li>
+      <li>At Least 25GB Hard Drive</li>
+      <li>USB Port</li>
+      <li>Internet Access*</li>
+    </ul>
+    <p>*<span class="italic">You may need access to ethernet cable for wired internet connection, or a usb cable to use a mobile phone as a mobile hot-spot to set up Wi-Fi drivers.</span></p>
+    </article>
+  </section>
+
+  <section class="main-section" id="you_will_need">
+    <header>You Will Need</header>
+    <article>
+    <ul>
+      <li>USB Drive 2GB+</li>
+      <li>ISO utility capable of creative Live Boot USB (I.E. Rufus)</li>
+      <li>Ubuntu ISO Download for Current version LTS (Long Term Support)</li>
+    </ul>
+    <h2 class="bold center">!WARNING!</h2>
+    <p class="bold center">THIS PROCESS REQUIRES FORMATTING THE MAIN DRIVE</p>
+    <p class="bold center">BACK UP ANY IMPORTANT DATA BEFORE PROCEEDING</p>
+    <h2 class="bold center">!WARNING!</h2>
+    </article>
+  </section>
+
+  <section class="main-section" id="download_and_setup_ubuntu_live_boot_usb">
+    <header>Download and Setup Ubuntu Live Boot USB</header>
+    <article>
+    <p>In this first step, you will navigate to Ubuntu's website and download the Ubuntu ISO</p>
+    <br />
+    <p>Navigate to <a href="https://www.ubuntu.com" target="_blank">ubuntu.com</a> 
+</p>
+<p>On the navigation bar, click <span class="bold">Download</span></p>
+<p>Under <span class="bold">Ubuntu Desktop</span> click on the <span class="bold">green box</span> with <span class="bold">LTS</span> and the version number</p>
+<br />
+<p>In the next step, you will use the Ubuntu ISO file to create a <span class="italic">Live Boot USB</span>.
+</p>
+<h2 class="bold center">!WARNING!</h2>
+<h3 class="bold center">THE NEXT STEPS WILL FORMAT YOUR USB DRIVE.</h3>
+<p class="bold center">ALL DATA ON THE USB DRIVE BEFORE WRITING THE ISO TO THE DRIVE WILL BE ERASED!</p>
+<p class="bold center">BACK UP ANY IMPORTANT DATA BEFORE PROCEEDING!</p>
+<br />
+
+<p>Insert your USB drive and run your ISO utility.
+</p>
+<p>Mount the Ubuntu ISO and create a Live Boot on your USB drive.</p>
+</article>
+  </section>
+
+  <section class="main-section" id="rufus_setup">
+    <header>Rufus Setup</header>
+    <article>
+    <p>Once you have opened Rufus, on the <span class="bold">Drive Properties</span> window:</p>
+    <p>Device should be set to your USB Drive</p>
+    <p class="italic">-If you are unsure which is your USB Drive, open a windows explorer window, navigate to My Computer, and take note of which letter is assigned to your USB Drive</p>
+    <p>Set <span class="bold">Boot Selection</span> to Disk or ISO image
+</p>
+    <p>Click on the SELECT button next to the Boot Selection option and navigate to the downloaded ISO file of Ubuntu, and select it.</p>
+    <p>Set <span class="bold">Partition Scheme</span> to MBR</p>
+    <p>Set <span class="bold">Target System</span> to BIOS or UEFI</p>
+    <p><span class="bold">Format Options</span> should be left alone, but as long as your USB drive is selected properly it should show File System FAT32 and Cluster Size should show the size of the USB drive (IE 1024MB is equivalent to 1GB)
+</p>
+    <p>Click <span class="bold">Start</span> to begin the process. If there is a pop-up window part-way through the process, select the (Recommended) option and click OK to continue
+</p>
+    <p>This writing process could take up to 5 or 10 minutes depending on the computer.</p>
+    <p></p>
+    </article>
+  </section>
+
+  <section class="main-section" id="installing_ubuntu_linux">
+    <header>Installing Ubuntu Linux</header>
+    <article>
+    <p>In this next step, you will restart your computer, and set your BIOS to boot into the Live Boot USB.</p>
+    <p>Restart your computer. When the logo splash screen appears, press the BIOS key.
+This will vary between manufacturers, but for most computers this will be <span class="bold">F2</span> or <span class="bold">F10</span>.
+<br />The startup splash screen will specify.
+</p>
+    <p>Once in BIOS, depending on your BIOS manufacturer, <span class="bold">change the order of Boot Drives</span>, or select which Drive you wish to boot from and press enter to proceed.
+</p>
+    <p>Once you have set your Boot Drive Order, your computer should now boot into a simple screen with some options to choose from.
+</p>
+    <p>Select “<span class="bold">Try Ubuntu</span>” to boot into a Live version. It is recommended to boot into Ubuntu first, as this will allow the user to make sure the operating system runs properly, and connect to the internet, making the following steps much easier. 
+</p>
+    <p>Once loaded into Ubuntu, on the <span class="bold">top right corner</span> click on the <span class="bold">down arrow</span> and then the <span class="bold">wifi symbol</span>. If Ubuntu's default drivers are compatible with your computer's hardware, you should see available WiFi networks. Otherwise you may need to access the internet via Ethernet, or a mobile WiFi hotspot.
+</p>
+    <p><span class="bold">NOTE</span>: <span class="italic">Ubuntu comes preinstalled with some basic applications. To make sure internet and audio drivers are functioning as intended, play a video on youtube</span>.</p>
+    <p>Close any open windows, and on the desktop double click “<span class="bold">Install Ubuntu</span>.”</p>
+    <p>During the installation procedure, set your preferred language and keyboard layout.</p>
+    <p>Make sure the “<span class="bold">Download Updates While Installing Ubuntu</span>” and “<span class="bold">Install third-party software for graphics and wi-fi hardware and additional media formats</span>” boxes are checked, and then select “<span class="bold">Normal Installation</span>.”</p>
+    <p>On the “Installation Type” screen, select “<span class="bold">Erase disk and install Ubuntu</span>”
+</p>
+    <p>Following this step, set your Time Zone and login credentials.</p>
+    <p>The remaining process could take approximately 10 minutes or less. After the process is finished, select “restart now.” Follow the prompts and after the computer is finished restarting, log in using the credentials set previously.
+</p>
+    <p>You can choose to follow through the first time setup at startup or skip through and complete these steps later.</p>
+    </article>
+  </section>
+
+  <section class="main-section" id="first_time_setup">
+    <header>First Time Setup</header>
+    <article>
+    <p>“Connect your online accounts.” You can choose to log in to your existing Google, Microsoft, etc accounts in this step, or skip this step by clicking “Skip Step” at the top right of the window.</p>
+    <p>Livepatch setup will install security updates automatically, and is a free service for personal accounts. It is recommended to activate Livepatch service, or you can skip this step by clicking “Skip Step” at the top right of the window.
+</p>
+    <p>“Help Improve Ubuntu?” You can choose either option at your preference. Agreeing to send data will aid the developers in use-case metrics, crash reports, bug reports, etc. To see what kind of data these reports collect and report, click on “Show first report.”</p>
+    <p>On the Privacy window you can choose whether to activate location services. This simply allows the computer and applications to access your geolocation data. This will aid applications and web browsers to provide accurate service by knowing your location. This step is user preference.</p>
+    <p>The “Ready to go” screen shows an example range of free software applications you can install by opening the software application menu. Click “Done” in the top right, or “Open Software Now” in the bottom left to proceed.
+    <br />For future use, the Ubuntu Software application is located on the task bar on the left side of the screen (Orange Suitcase).
+</p>
+    <p>Congratulations, you have successfully installed Ubuntu Linux!</p>
+    <p>Feel free to explore Software applications (Orange Suitcase) or get customizing with the settings menu. To pull up all applications, click on the arrangement of squares at the end of the main task bar, located bottom left of the screen by default. </p>
+    <h2>Welcome to the Linux community!</h2>
+    </article>
+  </section>
+
+
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
